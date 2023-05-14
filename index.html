@@ -1,76 +1,344 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
     <title>CSS Nature</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="wrapper">
-        <header><h1>CSS Nature</h1><div class="search"><input type="text"><button class="search" title="Search"><img src="search.png" alt="Search"></button></div></header>
-        <div class="contentWrapper">
-            <div class="content">
-                <header><h2>Title</h2></header>
-                <figure><div class="leaf demo"></div> <div class="leaf demo"></div> <div class="leaf demo"></div> <div class="leaf demo"></div></figure>
-                <div class="codeWrapper">
-                    <div class="css code"><h3>CSS</h3>
-        <pre class="css code">
+      <header>
+        <h1>CSS Nature</h1>
+        <div class="search">
+          <input type="text" /><button class="search" title="Search">
+            <img src="search.png" alt="Search" />
+          </button>
+        </div>
+      </header>
+      <div class="contentWrapper">
+        <div class="content">
+          <header><h2>Leaf</h2></header>
+          <figure>
+            <div class="leaf demo"></div>
+            <div class="leaf dry demo"></div>
+            <div class="leaf bean demo"></div>
+          </figure>
+          <div class="codeWrapper">
+            <div class="css code">
+              <h3>CSS</h3>
+              <pre class="css code">
             .leaf{
-
                 height: 10vw;
                 width: 10vw;
-                /* position: absolute; */
                 background-image: linear-gradient(135deg,lightgreen,darkgreen,lightgreen);
                 background-image: linear-gradient(135deg,rgb(197, 125, 17),darkgreen,rgb(197, 125, 17));
                 border: 1.2px solid darkgreen;
                 background-color: darkgreen;
                 border-radius: 60vw 0vh;
-                /* transform: rotate(90deg); */
                 box-shadow: 0px 5px 10px 2px;
                 top: 15vh;
                 left: 30vw;
-                /* overflow: hidden; */
-                /* animation-name: anim; */
-                /* animation-duration: 5s; */
                 animation-iteration-count: infinite;
                 display: grid;
             }
         </pre>
-                    </div>
-                    <div class="html code"><h3>HTML</h3>
-                    <pre class="html code">
-                        &ltdiv class="leaf"&gt
-                        &lt/div&gt
+            </div>
+            <div class="html code">
+              <h3>HTML</h3>
+              <pre class="html code">
+                        <div class="leaf">
+                        </div>
                     </pre>
-                    </div>
-                </div>
-                <div class="option">
-                    <label for="old">Old</label><input type="radio" name="type" id="old">
-                    <label for="new">New</label><input type="radio" name="type" id="new">
-                    <label for="left">left</label><input type="radio" name="type" id="left">
-                </div>
             </div>
-            
-
-            <div class="content">
-                <header><h2>Title</h2></header>
-                <figure><div class="demo"></div></figure>
-                <div class="codeWrapper">
-                    <div class="css code"></div>
-                    <div class="html code"></div>
-                </div>
-                <div class="option">
-                    <label for="old">Old</label><input type="radio" name="type" id="old">
-                    <label for="new">New</label><input type="radio" name="type" id="new">
-                    <label for="left">left</label><input type="radio" name="type" id="left">
-                </div>
-            </div>
-
-            
-
+          </div>
+          <div class="option">
+            <label for="old">Old</label
+            ><input type="radio" name="type" id="old" />
+            <label for="new">New</label
+            ><input type="radio" name="type" id="new" />
+            <label for="left">left</label
+            ><input type="radio" name="type" id="left" />
+          </div>
         </div>
+
+        <div class="content">
+          <header><h2>SUN</h2></header>
+          <figure>
+            <div class="sun demo"></div>
+            <div class="sun set demo"></div>
+            <div class=" demo"></div>
+          </figure>
+          <div class="codeWrapper">
+            <div class="css code">
+              <h3>CSS</h3>
+              <pre class="css code">
+                .sun{
+                  height: 10vw;
+                  width: 10vw;
+                  border-radius: 100%;
+                  background-image: radial-gradient(rgb(255, 234, 216),rgb(255, 196, 0));
+                  box-shadow: 0px 0px 2vw 1.5vw rgb(255, 196, 0);
+              }
+        </pre>
+            </div>
+            <div class="html code">
+              <h3>HTML</h3>
+              <pre class="html code">
+                        <div class="sun sun set">
+                        </div>
+                    </pre>
+            </div>
+          </div>
+          <div class="option">
+            <label for="old">Old</label
+            ><input type="radio" name="type" id="old" />
+            <label for="new">New</label
+            ><input type="radio" name="type" id="new" />
+            <label for="left">left</label
+            ><input type="radio" name="type" id="left" />
+          </div>
+        </div>
+
+
+        <div class="content">
+          <header><h2>Drop</h2></header>
+          <figure>
+            <div class="drop demo"></div>
+            <div class="blood drop demo"></div>
+          </figure>
+          <div class="codeWrapper">
+            <div class="css code">
+              <h3>CSS</h3>
+              <pre class="css code">
+                .drop{
+                  height: 10vw;
+                  width: 10vw;
+                  background-color: rgb(255, 255, 255);
+                  background-image: radial-gradient(rgba(173, 216, 230, 0.788),blue);
+                  box-shadow: .3vw .3vw 1vw .1vw   ;
+                  transform: rotate(45deg);
+                  border-radius: 0 100% 55% 100% ;
+              }
+        </pre>
+            </div>
+            <div class="html code">
+              <h3>HTML</h3>
+              <pre class="html code">
+                        <div class="drop">
+                        </div>
+                    </pre>
+            </div>
+          </div>
+          <div class="option">
+            <label for="old">Old</label
+            ><input type="radio" name="type" id="old" />
+            <label for="new">New</label
+            ><input type="radio" name="type" id="new" />
+            <label for="left">left</label
+            ><input type="radio" name="type" id="left" />
+          </div>
+        </div>
+
+        <div class="content">
+          <header><h2>Grass</h2></header>
+          <figure>
+            <div class="grass left demo"></div>
+            <div class="grass demo"></div>
+
+            <div class="grass left demo"></div>
+            <div class="grass demo"></div>
+          </figure>
+          <div class="codeWrapper">
+            <div class="css code">
+              <h3>CSS</h3>
+              <pre class="css code">
+                .grass{
+                  height: 10vw;
+                  width: 10vw;
+                  background-color: transparent;
+                  border-top: 2vw ridge green;
+                  border-left: 1vw ridge green;
+                  border-right:2vw solid transparent ;
+                  border-radius: 100vw  0 ;
+              }
+        </pre>
+            </div>
+            <div class="html code">
+              <h3>HTML</h3>
+              <pre class="html code">
+                        <div class="grass">
+                        </div>
+                    </pre>
+            </div>
+          </div>
+          <div class="option">
+            <label for="old">Old</label
+            ><input type="radio" name="type" id="old" />
+            <label for="new">New</label
+            ><input type="radio" name="type" id="new" />
+            <label for="left">left</label
+            ><input type="radio" name="type" id="left" />
+          </div>
+        </div>
+
+        <div class="content">
+          <header><h2>Bamboo</h2></header>
+          <figure>
+            <div class="bamboo demo"></div>
+            <div class="bamboo demo"></div>
+          </figure>
+          <div class="codeWrapper">
+            <div class="css code">
+              <h3>CSS</h3>
+              <pre class="css code">
+                .bamboo{
+                  height: 20vw;
+                  width: 5vw;
+                  background-color: orange;
+                  background-image: linear-gradient(180deg,rgb(255, 153, 0),rgb(255, 153, 0),brown,rgb(255, 153, 0),rgb(255, 153, 0),rgb(255, 153, 0),rgb(255, 153, 0),brown,rgb(255, 153, 0),rgb(255, 153, 0));
+              }
+        </pre>
+            </div>
+            <div class="html code">
+              <h3>HTML</h3>
+              <pre class="html code">
+                        <div class="bamboo">
+                        </div>
+                    </pre>
+            </div>
+          </div>
+          <div class="option">
+            <label for="old">Old</label
+            ><input type="radio" name="type" id="old" />
+            <label for="new">New</label
+            ><input type="radio" name="type" id="new" />
+            <label for="left">left</label
+            ><input type="radio" name="type" id="left" />
+          </div>
+        </div>
+      
+        <div class="content">
+          <header><h2>Mouse</h2></header>
+          <figure>
+            <div class="mouse demo">
+                <div class="body">
+                    <div class="face">
+                        <div class="ear"></div>
+                        <div class="eye"></div>
+                        <div class="nose"></div>
+                    </div>
+            </div>
+            </div>
+          </figure>
+          <div class="codeWrapper">
+            <div class="css code">
+              <h3>CSS</h3>
+              <pre class="css code">
+                .mouse{
+                  border-left: 5px solid grey;
+                  border-top: 5px solid grey;
+                  width: max-content;
+                  height: 5vw;
+                  border-radius: 2vw;
+                  display: flex;
+              }
+              .mouse .body{
+                  height: 2vw;
+                  width: 5vw;
+                  border-radius: 200px 500px 0px 0px;
+                  align-self: flex-end;
+                  box-shadow: 0px 1px 10px;
+                  background-color: grey;
+                  display: grid;
+                  position: relative;
+                  z-index: 2;
+              }
+              .mouse .body .face{
+                  justify-self: end;
+                  display: flex;
+                  position: relative;
+                  z-index: 2;
+              }
+              .mouse .body .ear{
+                  height: 20px;
+                  width: 20px;
+                  border-radius: 100%;
+                  background-image:radial-gradient(rgb(180, 180, 180),rgb(80, 80, 80));
+                  border: 2px solid grey;
+                  justify-self: end;
+                  align-self:baseline;
+                  position: relative;
+                  top: -5px;
+                  left: 5px;
+              }
+              .mouse .body .eye{
+                  height: 5px;
+                  width: 7px;
+                  border-radius: 100%;
+                  background-color: white;
+                  background-image:radial-gradient(rgb(255, 255, 255),rgb(14, 14, 14));
+                  border: .5px solid black;
+                  /* justify-self: end; */
+                  align-self: center;  
+                  position: relative;
+                  z-index: 2; 
+              }
+              .mouse .body .nose{
+                  height: 4px;
+                  width: 7px;
+                  border-radius: 100%;
+                  background-color: rgb(109, 108, 108);
+                  border: .5px solid black;
+                  justify-self: end;
+                  align-self: end; 
+              }
+        </pre>
+            </div>
+            <div class="html code">
+              <h3>HTML</h3>
+              <pre class="html code">
+                <div class="mouse">
+                  <div class="body">
+                      <div class="face">
+                          <div class="ear"></div>
+                          <div class="eye"></div>
+                          <div class="nose"></div>
+                      </div>
+                  </div>
+              </div>
+                    </pre>
+            </div>
+          </div>
+          <div class="option">
+            <label for="old">Old</label
+            ><input type="radio" name="type" id="old" />
+            <label for="new">New</label
+            ><input type="radio" name="type" id="new" />
+            <label for="left">left</label
+            ><input type="radio" name="type" id="left" />
+          </div>
+        </div>
+        
+        <div class="content">
+          <header><h2><a href="nature.html">All..</a></h2></header>
+          <figure><div class="demo"></div></figure>
+          <div class="codeWrapper">
+            <div class="css code"></div>
+            <div class="html code"></div>
+          </div>
+          <div class="option">
+            <label for="old">Old</label
+            ><input type="radio" name="type" id="old" />
+            <label for="new">New</label
+            ><input type="radio" name="type" id="new" />
+            <label for="left">left</label
+            ><input type="radio" name="type" id="left" />
+          </div>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
+<script src="index.js"></script>

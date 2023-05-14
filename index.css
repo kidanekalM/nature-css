@@ -1,7 +1,9 @@
+@import url('nature.css');
 *{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
 }
 div,figure{
     border-radius: 10px;
@@ -26,6 +28,7 @@ header{
 }
 header h1{
     color: darkgreen;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     /* color: transparent; */
     /* background-image: linear-gradient(45deg,green,black); */
     /* background-clip: text; */
@@ -95,10 +98,12 @@ div.content figure{
     grid-area: figure;
     box-shadow: 0px 0px 5px 5px rgb(87, 87, 87) inset;
     background-color:#9e9e9e;
+    height: 20vw;
     margin: 0rem 1rem;
     border-radius: 10px;
     padding: 1rem;
     display: flex;
+    gap: 10%;
     align-items: center;
     justify-content: center;
 }
@@ -119,7 +124,6 @@ div.codeWrapper{
     display: flex;
     padding: .1rem;
     gap: 1rem;
-    align-items: center;
     justify-content: space-around;
 }
 div.code{
@@ -134,9 +138,9 @@ div.code h3{
     color: rgb(48, 95, 250);
     padding: 0px 1rem;
     background-color: #131313;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 div.code pre{
-    font-family:monospace;
     font-size: 1rem;
     color: rgb(255, 255, 255);
     padding: 0px 1rem;
@@ -144,27 +148,24 @@ div.code pre{
 .code.html h3{
     color: chocolate;
 }
-
-
-.leaf{
-
-    height: 10vw;
-    width: 10vw;
-    /* position: absolute; */
-    background-image: linear-gradient(135deg,lightgreen,darkgreen,lightgreen);
-    background-image: linear-gradient(135deg,rgb(197, 125, 17),darkgreen,rgb(197, 125, 17));
-    border: 1.2px solid darkgreen;
-    background-color: darkgreen;
-    border-radius: 60vw 0vh;
-    /* transform: rotate(90deg); */
-    box-shadow: 0px 5px 10px 2px;
-    top: 15vh;
-    left: 30vw;
-    /* overflow: hidden; */
-    /* animation-name: anim; */
-    /* animation-duration: 5s; */
-    animation-iteration-count: infinite;
-    display: grid;
+.code span.property{
+    color: lightseagreen;
 }
+.code span.value{
+    color: rgb(62, 248, 15);
+}
+.code span.selector{
+    color: rgb(255, 208, 0);
+}
+.code span.element{
+    color: rgb(34, 34, 255);
+}
+.code span#name{
+    color: rgb(166, 255, 0);
+}
+.code span.class{
+    color: goldenrod;
+}
+
 
 
