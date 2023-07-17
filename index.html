@@ -321,11 +321,61 @@
         </div>
         
         <div class="content">
-          <header><h2><a href="nature.html">All..</a></h2></header>
-          <figure><div class="demo"></div></figure>
+          <header><h2>Eye</h2></header>
+          <figure><div class="demo">
+            <div class="eye">
+              <div class="iris">
+                  <div class="pupil">
+                  </div>
+              </div>
+          </div>
+          </div></figure>
           <div class="codeWrapper">
-            <div class="css code"></div>
-            <div class="html code"></div>
+            <div class="css code">
+              <pre class="css code">
+    .eye{
+      height: 10vw;
+      width: 10vw;
+      border-radius: 100% 0;
+      border: 1px solid grey;
+      transform: rotate(45deg);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      box-shadow: 5px 2px 1px 2px grey;
+      background-color: rgb(255, 228, 228);
+  }
+  .iris{
+      height: 70%;
+      width: 70%;
+      border-radius: 100%;
+      transform: rotate(-45deg);
+      background-image: radial-gradient(black,brown);
+      box-shadow: 0px 0px 3px 3px brown;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .pupil{
+      height: 30%;
+      width: 30%;
+      border-radius: 100%;
+      box-shadow: 0px 0px 3px 1px ;
+      background-color: black;
+  }
+              </pre>
+            </div>
+            <div class="html code">
+              <pre class="html code">
+                <div class="eye">
+                  <div class="iris">
+                      <div class="pupil">
+                      </div>
+                  </div>
+                </div>
+              </pre>
+            </div>
           </div>
           <div class="option">
             <label for="old">Old</label
